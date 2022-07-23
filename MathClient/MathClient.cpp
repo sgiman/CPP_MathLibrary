@@ -1,11 +1,11 @@
-﻿// MathClient.cpp : Client app for MathLibrary DLL.
+// MathClient.cpp : Client app for MathLibrary DLL.
 // #include "pch.h" Uncomment for Visual Studio 2017 and earlier
+
 #include <iostream>
 #include "MathLibrary.h"
 #include "utils.h"
 
 using namespace std;
-
 
 int main()
 {
@@ -13,10 +13,8 @@ int main()
     fibonacci_init(1, 1);
     
     // Запись значения последовательности до переполнения.
-    do {
-    
-        cout << fibonacci_index() << ": "<< fibonacci_current() << endl;
-    
+    do {    
+        cout << fibonacci_index() << ": "<< fibonacci_current() << endl;    
     } while (fibonacci_next());
     
     // Отчет о количестве значений, записанных до переполнения.
@@ -27,5 +25,4 @@ int main()
     MyDate();
     system("pause");
     return 0;
-
 }
